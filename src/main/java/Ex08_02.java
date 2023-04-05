@@ -6,7 +6,7 @@ public class Ex08_02 {
         int[]aa = new int[4];
         int hap;
 
-        System.out.printf("1번째 숫자를 입력하세요 : ");
+        System.out.printf("1번째 숫자를 입력하세요 : "); //for문 사용시 더 간결해짐
         aa[0] = s.nextInt();
 
         System.out.printf("2번째 숫자를 입력하세요 : ");
