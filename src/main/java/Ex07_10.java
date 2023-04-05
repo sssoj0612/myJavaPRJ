@@ -5,7 +5,7 @@ public class Ex07_10 {
 
         for (i=1 ; i<=100 ; i++) {
             if (i%3==0)
-                continue;
+                continue;   //continue문 안쓰고 : if(!(i%3==0))
 
             hap +=i;
         }
