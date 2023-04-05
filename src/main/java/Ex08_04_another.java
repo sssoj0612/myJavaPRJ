@@ -11,20 +11,22 @@ public class Ex08_04_another {
         int i;
 
         System.out.println("aa 몇 개? : " + aa.length); // 배열의 개수를 모를 때 length 함수 사용
-
         for (i=0 ; i<aa.length ; i++)
             System.out.printf("aa[%d]==>%d\t", i, aa[i]);
         System.out.printf("\n");
 
-        for (i=0 ; i<3 ; i++)
+        System.out.println("bb 몇 개? : " + bb.length);
+        for (i=0 ; i<bb.length ; i++)
             System.out.printf("bb[%d]==>%d\t", i, bb[i]);
         System.out.printf("\n");
 
-        for (i=0 ; i<2 ; i++)
+        System.out.println("cc 몇 개? : " + cc.length);
+        for (i=0 ; i<cc.length ; i++)
             System.out.printf("cc[%d]==>%d\t", i, cc[i]);
         System.out.printf("\n");
 
-        for (i=0 ; i<1 ; i++)
+        System.out.println("dd 몇 개? : " + dd.length);
+        for (i=0 ; i<dd.length ; i++)
             System.out.printf("dd[%d]==>%d\t", i, dd[i]);
         System.out.printf("\n");
     }
