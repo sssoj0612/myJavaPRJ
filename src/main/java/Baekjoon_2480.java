@@ -16,7 +16,7 @@ public class Beakjoon_2480 {
         }
 
         else if (num[0] == num[1] || num[0] == num[2] || num[1] == num[2]) // 같은 눈이 2개인 경우
-        { int same; // 같은 눈의 값을 임의로 선언하여 경우의 수가 3개니까 그때마다 same에 대입해줌
+        { int same; // 같은 눈의 값을 임의로 선언하여 경우의 수가 3개니까 그때마다 same에 대입
             if (num[0] == num[1]) {
                 same = num[0];
             } else if (num[0] == num[2]) {
