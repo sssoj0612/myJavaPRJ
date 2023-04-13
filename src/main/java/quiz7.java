@@ -8,25 +8,28 @@ public class quiz7 {
         int sum = 0; //평균을 구하기 위한 합계
 
         for (int i = 0; i < nums.length; i++) { // 숫자 입력을 위한 for문
+            System.out.printf("%d번째 값 : ", i + 1);
             nums[i] = s.nextInt();
-            System.out.printf("%d번째 값 : \n", i + 1);
-            sum += nums[i];
+            sum += nums[i]; // 평균을 구하기 위해 입력 된 값들의 합을 저장
         }
+
         int max = nums[0]; //최대값을 배열 1번째 값으로 초기화
         int min = nums[0]; //최소값을 배열 1번째 값으로 초기화
-        int average = 0; //평균값
 
-        for (int i = nums[0]; i < nums.length; i++) { //최대값,최소값을 구하기위한 for문
-            if (nums[i] < max) { //배열의 i번째 값과 max에 저장 된 값을 비교
-                nums[i] = max;
-                System.out.printf("최댓값 : %d \n", max);
-            } else if (nums[i] < min) {
-                nums[i] = min;
-                System.out.printf("최소값 : %d \n", min);
-            }
+        for (int i = 0; i < nums.length; i++) { //최대값,최소값을 구하기위한 for문
+            if (nums[i] > max) { //배열의 i번째 값과 max에 저장 된 값을 비교
+                max = nums[i];
+                }
 
-            average = sum / nums.length;
-            System.out.printf("평균값 : %d \n", average);
+            else if (nums[i] < min) {
+                min = nums[i];
+                }
         }
+
+        int average = sum / nums.length; //평균 값 구하기
+
+        System.out.printf("최댓값 : %d \n", max);
+        System.out.printf("최소값 : %d \n", min);
+        System.out.printf("평균값 : %d \n", average);
     }
 }
