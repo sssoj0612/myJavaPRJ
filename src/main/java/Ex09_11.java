@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Ex09_11 {
-    static  int coffee_machine(int button){
+    public static int coffee_machine(int button){
         System.out.printf("\n# 1.(자동으로) 뜨거운 물을 준비한다\n");
         System.out.printf("# 2.(자동으로) 종이컵을 준비한다\n");
 
