@@ -17,6 +17,12 @@ public class Ex_10_01 {
         // 2번째  catch : 0으로 나누는 오류 등 수식 오류 발생시 실행.
         catch (ArithmeticException e) {
             System.out.println("0으로 나누는 등의 오류예요 ~~");
+            System.out.println("오류 메시지 : " + e);
+        }
+
+        catch (Exception e) { // 대부분 이거 씀. 항상 제일 마지막에 위치.
+            System.out.println("자바에서 발생되는 모든 에러를 다 잡을 수 있어요");
+            System.out.println("오류 메시지 : " + e);
         }
 
         // 오류 발생 여부와 관계없이 실행 (필수는 아니지만 작성하는게 좋음)
